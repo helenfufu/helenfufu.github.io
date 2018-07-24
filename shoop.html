@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shoop</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Inconsolata" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="google" content="notranslate" />
+</head>
+
+<body>
+    <header class="">
+        <div class="navbar navbar-default visible-xs">
+            <button type="button" class="navbar-toggle collapsed">
+      <span class="sr-only">Toggle Navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+            <a href="./index.html" class="navbar-brand">HELEN FU</a>
+        </div>
+
+        <nav class="sidebar">
+            <div class="navbar-collapse" id="navbar-collapse">
+                <div class="site-header hidden-xs">
+                    <a class="site-brand" href="./index.html" title="">
+                        HELEN FU
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li><a href="./index.html" title="">WORK</a></li>
+                    <li><a href="./about.html" title="">ABOUT</a></li>
+                </ul>
+
+                <nav class="nav-footer">
+                    <p class="nav-footer-social-buttons">
+                        <a class="fa-icon" href="https://www.linkedin.com/in/helenfufu/" target="_blank" title="">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+                        <a class="fa-icon" href="mailto:helenfu@berkeley.edu" title="">
+            <i class="far fa-envelope"></i>
+          </a>
+                    </p>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main class="" id="main-collapse">
+
+        <!-- header and description-->
+        <div class="section-container-spacer">
+            <h1>SHOOP</h1>
+            <div class="project-overview">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-7 col-md-7">
+                        <p>Shoop is a mobile grocery shopping app that allows users to build lists, navigate supermarkets, and track expenditure.</p>
+
+                        <p> This project was part of the <a href="https://handbook.unimelb.edu.au/2018/subjects/info30004" target="_blank">Usability Engineering class</a> at the University of Melbourne. Over the course of a semester, we conducted primary and secondary research, created lo-fi and hi-fi prototypes, and used both expert- and user-based evaluations to iterate upon our design.
+                            <br>
+                            <br> <strong>Team:</strong> Jenny Croft, Jaiden Fairoze, Alex Kennedy, Shuangyuan Wen, and Helen Fu
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5">
+                        <p>User research, interaction design, iterative prototyping, usability testing</p>
+                        <p>Usability Engineering Project, Spring 2018</p>
+                        <p>See full report(s) here:
+                            <a href="./assets/shoop-report-1.pdf" target="_blank"><strong>1</strong></a>
+                            <a href="./assets/shoop-report-2.pdf" target="_blank"><strong>2</strong></a></p>
+                    </div>
+                </div>
+                <p><img src="./assets/images/shoop/shoop-0.png" alt="" class="img-responsive"></p>
+            </div>
+        </div>
+
+        <div class="section-container spacer">
+
+            <h2>Research</h2>
+
+            <p>Initial research showed that the in-store supermarket experience has remained relatively unchanged for decades, and supermarkets have focused on improving existing mechanisms rather than introducing new technology.
+                <!-- <sup><strong>1</strong></sup> -->
+                Despite this, we found that supermarket chains would be interested in new systems. Analysis of the effect of smart technology on customer dynamics has shown that digital solutions can significantly improve the retail experience.
+                <!-- <sup><strong>2</strong></sup> -->
+                It was clear that supermarkets had yet to fully realize the value that digital aids could bring.</p>
+
+            <p>Given the competitive advantages of positive in-store experiences,
+                <!-- <sup><strong>3</strong></sup> -->
+                we decided to build an app to <strong>complement the in-store shopping experience</strong> rather than replace it. We considered the following customer experience touchpoints and improvements:
+                <!--<sup><strong>4</strong></sup>-->
+                <ul>
+                    <li>Process – optimizing wait times, aiding store navigation, speeding up customer service</li>
+                    <li>Communication – easy access to promotions (sales) and item information (price, stock, etc.)</li>
+                    <li>Product Interaction – ensuring high product quality, a wide selection of products, and a pleasant store environment</li>
+                    <li>Technology – reducing friction when finding and purchasing items, potential for self-service functions </li>
+                </ul>
+            </p>
+
+            <p>We proposed a mobile-based solution to streamline the in-store experience by leveraging technology to impact the above touchpoints. We hypothesized the following functionality:
+                <ul>
+                    <li>Real-time navigation to find items</li>
+                    <li>The ability to contact staff through a digital platform</li>
+                    <li>The ability to quickly look up various item information</li>
+                    <li>Expenditure-tracking with an integrated shopping list</li>
+                </ul>
+            </p>
+
+            <h3>User Interviews</h3>
+
+            <p>We identified potential target users and conducted <strong>semi-structured interviews</strong> with two university students (one 19-year-old undergraduate and one 21-year-old postgraduate) and a 57-year-old mother of two. Though there were some common themes, the data gathered from the university students largely differed from that obtained from the mother:
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h4>Mother</h4>
+                        <ul>
+
+                            <li>Values customer-staff interactions</li>
+                            <li>Takes pleasure in the general retail experience</li>
+                            <li>Not likely to download a mobile grocery shopping app</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h4>University Students</h4>
+                        <ul>
+                            <li>Find in-store assistance to be inefficient, tedious, and time-consuming</li>
+                            <li>Take a more swift approach to grocery shopping and seek to minimize the time spent shopping</li>
+                            <li>Receptive to the idea of a mobile app designed for the in-store experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h4>Both</h4>
+                        <ul>
+                            <li>Grocery shop at the same place on a regular basis</li>
+                            <li>Use some form of extended cognition, i.e. a traditional shopping list or notes on a mobile phone</li>
+                        </ul>
+                    </div>
+                </div>
+            </p>
+
+            <p>The interviews allowed us to <strong>narrow our target users:</strong> we concluded that our app should be pitched toward individuals who are at least moderately <strong>price-sensitive, comfortable with technology, and inclined to use mobile apps.</strong> Interviewees also proposed a number of potential features—some of which directly aligned with our hypothesized features, adding a level of verification to our design. However, our team had an overwhelming number of possible features, so we sought to empirically determine which ones we would focus on.
+            </p>
+
+            <h3>Questionnaire</h3>
+
+            <figure>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <img src="./assets/images/shoop/shoop-1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <img src="./assets/images/shoop/shoop-2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <img src="./assets/images/shoop/shoop-3.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <img src="./assets/images/shoop/shoop-4.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <figcaption>Select Google Form screenshots.</figcaption>
+            </figure>
+
+            <p>Our main goal for the questionnaire was to <strong>refine the purpose and features of our product</strong> based on a smaller set of target users. We posed a combination of multiple-choice, ranking, and free response questions in order to identify the most prominent pain points of grocery shopping based on user habits, tendencies, and preferences. We received 33 responses.</p>
+
+            <p>
+                <h4>Respondents were:</h4>
+                <ul>
+                    <li>18-34 years old, with a heavy density (97%) in the 18-24 bracket</li>
+                    <li>Predominantly individual shoppers who grocery shop either once every week or once every two weeks</li>
+                    <li>Mostly (60.6%) familiar with store layout, but a significant portion (38.2%) showed many people were either unfamiliar with most layouts, or their familiarity with layout varied depending on the store in question</li>
+                    <li>More inclined to <strong>shop in-person</strong> (69.7%) than use digital alternatives (delivery, click-and-collect)</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Key Insights</h4>
+                <ul>
+                    <li>Majority of respondents <strong>disliked interacting with staff</strong> and <strong>preferred finding items on their own.</strong> They largely agreed that supermarket staff was easy to find if they needed or wanted to do so.</li>
+                    <li>Respondents showed <strong>little interest in health or nutrition tracking.</strong></li>
+                    <li>Shopping habits and tendencies included:
+                        <ul>
+                            <li>Varying dependence on shopping lists</li>
+                            <li>Spontaneous purchases and deviations from one's shopping list (if used)</li>
+                            <li>Sticking to previously purchased brands</li>
+                            <li>High price-sensitivity</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <h4>Key Problems</h4>
+            <ul>
+                <li>Forgetting to purchase items</li>
+                <li>Not being able to locate items</li>
+                <li>Finding that desired items are out of stock</li>
+                <li>Missing out on sales</li>
+            </ul>
+
+            <p>Guided by the interviews and questionnaire, we developed personas, scenarios, and tasks to further determine user requirements and goals. Our research highlighted a need for <strong>memory, navigation, and money-related tools.</strong></p>
+
+            <h2>Solutions</h2>
+
+            <p>From user feedback gathered about frustrations while shopping and the value of particular features, we deduced three major issues to address:
+                <ul>
+                    <li><strong>Locating specific items and minimizing time spent at the supermarket.</strong> This is addressed with the mapping feature, which creates the optimal route for users to collect the items on their shopping list. Respondents overwhelmingly believed locating specific items would be the most useful feature offered.</li>
+                    <li><strong>Forgetting to purchase items.</strong> Users identified this to be the most frustrating aspect of grocery shopping. This issue is addressed using external cognition to engage both recall and recognition. The app incorporates memory aids through the ability to add items to the shopping list via search (recall) and browse (recognition). Despite varying use of shopping lists among respondents, linking the shopping list to the map encourages use of the memory device in order to eliminate the issue of forgetfulness.</li>
+                    <li><strong>Gauging prices and managing expenditure.</strong> Due to the high price-sensitivity of our target users, we implemented tools to help with money-saving. This is done through the price and sales information included in the item details (in addition to stock information), as well as the expenditure-tracking features.</li>
+                </ul>
+            </p>
+
+            <h3>Lo-Fi Prototype</h3>
+
+            <p>Equipped with our research and design goals, we created our first prototype. We opted for a paper prototype in order to take advantage of its quick, inexpensive, and disposable properties. This allowed us to conduct early usability testing, promote rapid development, and reflect on design alternatives without over-investing in the first iteration.</p>
+
+            <p>
+                <figure>
+                    <img src="./assets/images/shoop/shoop-5.png" alt="" class="img-responsive">
+                    <figcaption>Early user flow sketches.</figcaption>
+                </figure>
+            </p>
+
+            <div class="section-container-spacer">
+                <h4>Search/Browse</h4>
+                <p>Search and browse for items to add a specified quantity to the shopping list.</p>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Root Search/Browse</h6>
+                        <img src="./assets/images/shoop/shoop-6.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Search Results</h6>
+                        <img src="./assets/images/shoop/shoop-7.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Browse Subcategory</h6>
+                        <img src="./assets/images/shoop/shoop-8.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Quantity Interface</h6>
+                        <img src="./assets/images/shoop/shoop-9.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-container-spacer">
+                <h4>Shopping List</h4>
+                <p>Items added to the shopping list from searching and browsing are stored here.</p>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Empty Shopping List</h6>
+                        <img src="./assets/images/shoop/shoop-10.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Populated Shopping List</h6>
+                        <img src="./assets/images/shoop/shoop-11.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-container-spacer">
+                <h4>Map/Navigation</h4>
+                <p>The optimal route updates with changes made to the shopping list. This allows users to efficiently navigate the store for their desired items.</p>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Full Map</h6>
+                        <img src="./assets/images/shoop/shoop-12.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Ordered List Menu</h6>
+                        <img src="./assets/images/shoop/shoop-13.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Product Information Menu</h6>
+                        <img src="./assets/images/shoop/shoop-14.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Quantity Interface</h6>
+                        <img src="./assets/images/shoop/shoop-15.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-container-spacer">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-9 col-md-9">
+                        <h4>Money Management</h4>
+                        <p>View grocery expenditure trends, history, and receipts.</p>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h4>Account</h4>
+                        <p>Manage account settings.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Spending Overview</h6>
+                        <img src="./assets/images/shoop/shoop-16.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Spending History</h6>
+                        <img src="./assets/images/shoop/shoop-17.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Digital Receipt</h6>
+                        <img src="./assets/images/shoop/shoop-18.jpg" alt="" class="img-responsive">
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <h6>Account Information</h6>
+                        <img src="./assets/images/shoop/shoop-19.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+            <h3>Usability Testing</h3>
+            <p>We conducted an expert-based <strong>cognitive walkthrough</strong> to evaluate the usability of our prototype for <strong>three major tasks: (1) building a shopping list, (2) navigating the store,</strong> and <strong>(3) reviewing monthly expenditure.</strong> The walkthrough revealed design problems pertaining to general navigation, addition of items to the shopping list, redundancy of enforcing quantity input, difficulty browsing due to tall category depths, lack of feedback on the map screen, and limited utility of the money management tool.</p>
+
+            <h4>General Navigation Problems</h4>
+            <ul>
+                <li>Uncommon position of home button: second from left (out of five tabs).</li>
+                <li>Unclear distinction between ‘modes’ and ‘tools’ made it difficult to identify how different features (i.e. Shopping List, Search/Browse, and Map) were related and interdependent. This led to issues in understanding how the Shopping List updated when searching for items and how the Map updated with respect to Shopping List changes.</li>
+            </ul>
+
+            <h4>Shopping List, Search/Browse, and Map Problems</h4>
+            <ul>
+                <li>List construction was cumbersome and took too long. Users had to build their Shopping List from scratch for every shop by manually searching/browsing for each individual item. This undermined the efficiency goal of our app.</li>
+                <li>Inability to remove items from the Shopping List. This was an oversight in the paper prototype.
+                </li>
+                <li>Quantity input deemed tedious and necessary—redundant and too many clicks needed to simply add one given product to the Shopping List.</li>
+                <li>Category depth too vertical—too many clicks needed to get through sub-screens and reach specific items.</li>
+                <li>Automatic Map lacked clear feedback for path generation and list-to-map updates.
+                </li>
+                <li>Poor accessibility of bottom Map menu: started minimized. It was unclear the menu existed due to low visibility.</li>
+                <li>Lack of defined feedback for users to evaluate when they checked off an item. Failed to consider whether the app would make checking off items mandatory for users (which could potentially be annoying).</li>
+            </ul>
+
+            <h4>Money Management Problems</h4>
+            <ul>
+                <li>Removing the quantity interface would pose a data collection problem: our app needed an alternative way to collect spending data.</li>
+                <li>Spending graph lacked signifiers to communicate the graph’s time-frame was adjustable.</li>
+                <li>Little to no summary statistics available. Users may want a higher-level view of their grocery shopping finances.
+                </li>
+            </ul>
+
+            <hr>
+
+            <div class="section-container-spacer">
+
+                <h2>Redesign</h2>
+
+                <p>
+                    Informed by the problems revealed in the cognitive walkthrough, we sought to:
+                    <ul>
+                        <li><strong>Expedite list construction</strong> by removing the quantity interface and adding a Favorites system</li>
+                        <li><strong>Improve app navigation</strong> by reorganizing the UI flow to be more logical and aligned to use-cases</li>
+                        <li><strong>Improve in-store routing</strong> by adding clear feedback and a more practical item 'check-off' mechanism</li>
+                    </ul>
+
+                    Taking into account problem severity and the feasibility of implementing effective solutions, we made the following changes (among others—see <a href="./assets/shoop-report-2.pdf#page=17" target="_blank">full report</a> for more detail) in our newly designed digital prototype.
+            </div>
+
+            </p>
+
+            <h3>Key Design Changes</h3>
+            <p>
+                <img src="./assets/images/shoop/shoop-20.png" alt="" class="img-responsive">
+            </p>
+
+            <h3>Hi-Fi Prototype</h3>
+            <p>Using Axure RP, we created a fully-interactive digital prototype to facilitate our user-based lab evaluations. The prototype was constructed with <strong>four specific tasks</strong> in mind: <strong>(1) managing Favorites, (2) building a Shopping List, (3) planning the route and navigating the supermarket,</strong> and <strong>(4) scanning a new receipt.</strong></p>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>Managing Favorites</h4>
+                    <img src="./assets/images/shoop/shoop-21.png" alt="" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>Building Shopping List</h4>
+                    <img src="./assets/images/shoop/shoop-22.png" alt="" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>Planning Route and Navigating the Supermarket</h4>
+                    <img src="./assets/images/shoop/shoop-23.png" alt="" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>Scanning New Receipt</h4>
+                    <img src="./assets/images/shoop/shoop-24.png" alt="" class="img-responsive">
+                </div>
+            </div>
+
+            <h3>Usability Testing</h3>
+            <p>To evaluate the usability of our redesigned app, we conducted testing with five undergraduate students at the University of Melbourne's <a href="https://cis.unimelb.edu.au/research/groups/interaction-design/" target="_blank">Interaction Design Lab</a>. We asked participants to complete the aforementioned tasks using the Axure prototype and collected data from pre- and post-evaluation questionnaires, Tobii eye-tracking software, and user discussions.</p>
+
+            <h4>Key Evaluation Goals</h4>
+            <p>Our evaluation goals were primarily concerned with the efficiency, learnability, memorability, and utility of our app. We aimed to determine:
+                <ul>
+                    <li>Whether users could distinguish between the Favorites and Shopping List and use them for their intended purposes
+                    </li>
+                    <li>How quickly users could build a Shopping List</li>
+                    <li>Whether users could understand the embedding of ‘tools’ inside ‘modes’ and access them correctly to complete tasks (e.g. for the Search/Browse and Map tools, which were embedded in List mode)</li>
+                    <li>Whether the Map feedback was sufficient for the user to successfully navigate through the store</li>
+                    <li>What physical action users take when scanning a receipt with a mobile phone in order to inform the implementation of the receipt-scanning feature</li>
+                </ul>
+            </p>
+
+            <h4>Key Findings</h4>
+            <ul>
+                <li><strong>Steep learning curve for the Favorites system.</strong> Users experienced a steep learning curve upon <strong>first use</strong>—once they understood the feature's intention, subsequent navigation through the app was drastically more coherent. </li>
+                <li><strong>Poor discoverability of the Map swipe menu.</strong> The two dots were meant to denote which 'slide' the user was on. These visual cues were insufficient, and the purpose of swiping capability was unclear.</li>
+                <li><strong>Confusing Money Management and receipt interface.</strong> The '$' icon did not clearly communicate receipt scanning. Moreover, there was inadequate feedback when users scanned a receipt.</li>
+                <li><strong>Ambiguity between the Edit List and Clear List options when viewing the Favorites and Shopping List screen.</strong></li>
+            </ul>
+
+            <h4>Limitations</h4>
+            <p>We encountered several limitations during the usability evaluation. Users ran into prototype bugs while trying to complete the tasks. For example, it was not feasible to account for every possible way in which users could add items to their Shopping List, so users may have reached a screen that did not accurately reflect their actions (such as having a four-item shopping list after only adding one item). In such cases, user confusion reflected issues with the <em>prototype</em> rather than the <em>actual system</em>.</p>
+
+            <p>
+                Furthermore, evaluation of the Map screen was limited by the lab setting. We could not account for physical aspects of navigating through a store in real life. For example, users experience a situational impairment when shopping with a basket or shopping cart while holding a smartphone. This aspect was not tested in our usability evaluation.
+            </p>
+
+        </div>
+
+        <div class="section-container-spacer">
+            <h2>Next Steps</h2>
+
+            <h3>Future Design Recommendations</h3>
+
+            <ul>
+                <li>Inclusion of tutorial for first-time user</li>
+                <li>Remove swipe menu from Map screen</li>
+                <li>Change '$' icon for the Money Management tab to a barcode symbol</li>
+                <li>Combine Edit List and Clear List options into one all-encompassing 'Edit' button. (Clear List would be an option within an overarching Edit menu.)</li>
+            </ul>
+
+
+            <!--<p>Something about iterative design and room for improvement. todo</p>-->
+        </div>
+
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            navbarToggleSidebar();
+            navActivePage();
+        });
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
